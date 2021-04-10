@@ -1,8 +1,8 @@
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area");
-var originText = document.querySelector("#origin-text p");
 const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
+var originText = document.querySelector("#origin-text p");
 
 var timer = [0,0,0,0];
 var interval;
@@ -30,13 +30,12 @@ function runTimer() {
 // Match the text entered with the provided text on the page:
 function spellCheck() {
     let textEntered = testArea.value;
-    //console.log(textEntered)
     let text = originText.innerHTML;
     let originTextMatch = text.substring(0,textEntered.length);
-
     if (textEntered == text) {
         clearInterval(interval);
         testWrapper.style.borderColor = "#429890";
+        alert("well done!");
     } else {
         if (textEntered == originTextMatch) {
             testWrapper.style.borderColor = "#65CCf3";
@@ -83,56 +82,49 @@ function reset() {
     theTimer.innerHTML = "00:00:00";
     testWrapper.style.borderColor = "grey";
 
-    
-    // for (let i = 0; i < array.length; i++) {
-    //     const element = array[i];
-    //     originText.innerHTML = element;
-    //     console.log(originText.innerHTML);
-    //     break;
-    // }
 
     switch(originText.innerHTML) {
         case originText.innerHTML = array[11]:
           originText.innerHTML = array[0];
           break;
         case originText.innerHTML = array[0]:
-            originText.innerHTML = array[1];
+          originText.innerHTML = array[1];
           break;
         case originText.innerHTML = array[1]:
-            originText.innerHTML = array[2];
+          originText.innerHTML = array[2];
           break;
         case originText.innerHTML = array[2]:
-            originText.innerHTML = array[3];
+          originText.innerHTML = array[3];
           break;
         case originText.innerHTML = array[3]:
-            originText.innerHTML = array[4];
+          originText.innerHTML = array[4];
           break;
         case originText.innerHTML = array[4]:
-            originText.innerHTML = array[5];
+          originText.innerHTML = array[5];
           break; 
         case originText.innerHTML = array[5]:
-            originText.innerHTML = array[6];
+          originText.innerHTML = array[6];
           break; 
         case originText.innerHTML = array[6]:
-            originText.innerHTML = array[7];
+          originText.innerHTML = array[7];
           break;  
         case originText.innerHTML = array[7]:
-            originText.innerHTML = array[8];
+          originText.innerHTML = array[8];
           break;  
         case originText.innerHTML = array[8]:
-            originText.innerHTML = array[9];
+          originText.innerHTML = array[9];
           break; 
         case originText.innerHTML = array[9]:
-            originText.innerHTML = array[10];
+          originText.innerHTML = array[10];
           break;   
         case originText.innerHTML = array[10]:
-            originText.innerHTML = array[11];
+          originText.innerHTML = array[11];
           break; 
         case originText.innerHTML = array[11]:
-            originText.innerHTML = array[0];
+          originText.innerHTML = array[0];
           break;         
         default:
-            originText.innerHTML = array[11];
+          originText.innerHTML = array[11];
       }
 
 }
@@ -141,6 +133,3 @@ function reset() {
 testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", spellCheck, false);
 resetButton.addEventListener("click", reset, false);
-
-
-// var choose = ["how are you","how was your day ?","how are you feeling now ?", "what is the differance between CPU and GPU","what is your name",]
