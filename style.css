@@ -1,3 +1,136 @@
+@media (min-width : 1px){
+    #reset {
+        position: relative;
+        top: 30px;
+        right: 10%;
+        display: flex;
+    }
+    .timer {
+        position: absolute;
+        display: flex;
+        left : 2%; 
+        min-width: 20px;
+    }
+}
+
+@media (min-width : 240px){
+    #reset {
+        position: relative;
+        top: 30px;
+        right: 0%;
+        display: flex;
+    }
+    .timer {
+        position: absolute;
+        display: flex;
+        left : 8%; 
+    }
+}
+@media (min-width : 280px){
+    #reset {
+        position: relative;
+        top: 80px;
+        right: 10%;
+        display: flex;
+    }
+    .timer {
+        position: relative;
+        display: flex;
+        left : 11%; 
+    }
+}
+@media (min-width : 320px) {
+    #reset {
+        position: relative;
+        display: flex;
+        top: 80px;
+        right: 19%;
+        
+    }
+    .timer {
+        position: relative;
+        left: 50%;
+        display: flex;
+    }
+} 
+@media (min-width : 360px) {
+    #reset {
+        position: relative;
+        top: 80px;
+        right: 22.5%;
+        display: flex;
+        align-items: center;
+    }
+    .timer {
+        position: relative;
+        left: 120%;
+    }
+}
+@media (min-width : 375px) {
+    #reset {
+        position: relative;
+        top: 80px;
+        right: 23%;
+        display: flex;
+    }
+    .timer {
+        position: relative;
+        display: flex;
+        left: 125%;
+    }
+}
+@media (min-width : 384px) {
+    #reset {
+        position: relative;
+        top: 80px;
+        right: 26%;
+        display: flex;
+    }
+    .timer {
+        position: relative;
+        display: flex;
+        left: 125%;
+    }
+}
+@media (min-width : 411px) {
+    #reset {
+        position: relative;
+        top: 80px;
+        right: 28%;
+        display: flex;
+    }
+    .timer {
+        position: relative;
+        display: flex;
+        left: 160%;
+    }
+} 
+@media (min-width : 414px) {
+    #reset {
+        position: relative;
+        top: 80px;
+        right: 26%;
+        display: flex;
+    }
+    .timer {
+        position: relative;
+        display: flex;
+        left: 170%;
+    }
+} 
+@media (min-width : 458px) {
+    #reset {
+        position: relative;
+        top: 0px; 
+        right: 0%; 
+        display: flex;
+    }
+    .timer {
+        position: relative;
+        display: flex;
+        left: 0%;
+    }
+}
 /*--------------------------------------------------------------
 Typography
 --------------------------------------------------------------*/
