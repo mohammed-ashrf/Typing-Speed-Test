@@ -1,15 +1,20 @@
 /* Layout */
 .stand {
-    display: flex;
-    padding: 2em;
-    height: 9vh;
+    display: flex; 
+    padding-left: 0.5em;
+    height: 40px;
     justify-content: space-between;
     align-items: center;
 }
-
+.clockbox {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 .clockbox,
 #clock {
     width: 40px;
+    height: 40px;
 }
 
 /* Clock styles */
@@ -57,10 +62,8 @@
 }
 
 /* Make all arms rotate around the same center point. */
-/* Optional: Use transition for animation. */
 #hour,
 #minute,
 #second {
     transform-origin: 300px 300px;
-    /*transition: transform .5s ease-in-out;**/
 }
